@@ -1,0 +1,31 @@
+package java_fundamentals;
+import java.util.*;
+
+public class ArraysQ11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		  Scanner sc = new Scanner(System.in);
+
+	       
+	        System.out.print("Enter the size of the array: ");
+	        int n = sc.nextInt();
+
+	        
+	        int[] arr = new int[n];
+	        System.out.println("Enter " + n + " integers:");
+	        for (int i = 0; i < n; i++) {
+	            arr[i] = sc.nextInt();
+	        }
+	        boolean only14 = true;
+	        for (int num : arr) {
+	            if (num != 1 && num != 4) {
+	                only14 = false;
+	                break;
+	            }
+	        }
+	        System.out.println("Only 1 or 4? " + only14);
+
+	}
+
+}
